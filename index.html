@@ -1,31 +1,167 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title> Empresa 1 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa 1 | Inicio</title>
+  <style>
+    :root {
+      --primary: #123b6d;
+      --accent: #0f766e;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #0b2447);
+      color: #fff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 .8rem;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+
+    .card-content {
+      padding: 1rem 1.2rem 1.2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: .5rem;
+      color: var(--accent);
+      font-size: .85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: .4rem;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      background: #fff;
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
+    }
+
+    .cta a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.4rem 1rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
 </head>
-
 <body>
-<h1><p align="center">Probando la web</p></h1>
+  <header>
+    <h1>Empresa 1</h1>
+    <p>Plantilla profesional de presentación web</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="leones.html">Leones</a>
+      <a href="https://elpais.com/" target="_blank" rel="noopener noreferrer">Noticias</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="grid">
+      <article class="card">
+        <a href="https://www.nationalgeographic.com/" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/leon.jpg" alt="León en la sabana">
+        </a>
+        <div class="card-content">
+          <span class="tag">Fauna</span>
+          <h2>Leones</h2>
+          <p>Conoce más sobre el hábitat, comportamiento y conservación de esta especie.</p>
+        </div>
+      </article>
 
-<h1><font color="red"><a href="leones.html">Leon</a></font></h1><br>
+      <article class="card">
+        <a href="https://www.parks.ca.gov/?page_id=597" target="_blank" rel="noopener noreferrer">
+          <img src="imagenes/osos.jpg" alt="Oso en entorno natural">
+        </a>
+        <div class="card-content">
+          <span class="tag">Naturaleza</span>
+          <h2>Osos</h2>
+          <p>Información general sobre osos y consejos para visitar parques de forma segura.</p>
+        </div>
+      </article>
+    </section>
 
+    <section class="cta">
+      <strong>Contenido destacado:</strong>
+      Puedes visitar la sección dedicada a <a href="leones.html">Leones</a> para ampliar información.
+    </section>
+  </main>
 
-<a href="https://www.nationalgeographic.com/">
-
-<img src="imagenes/leon.jpg">
-
-
-</a>
-
-
-<h2><font color="blue">Osos</font></h2><br>
-
-<a href="https://www.parks.ca.gov/?page_id=597"><img src="imagenes/osos.jpg" width="640"height="460"></a>
-
-<h3><font color="a8c42e">Hola caracola</font></h3><br>
-<h4><font color="7b00a6">Hola caracola</font></h4><br>
-
-Pulsa <a href="https://elpais.com/">aqui</a>
+  <footer>
+    © 2026 Empresa 1 · Sitio demostrativo con formato profesional
+  </footer>
 </body>
-
 </html>
